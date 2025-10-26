@@ -10,17 +10,17 @@
 
  ```bash
 cargo run <текст_для_поиска> <путь_к_файлу>
+```
 
 ## Пример:
 
  ```bash
 cargo run hello example.txt
-
+```
 
 ##  Настройка чувствительности к регистру
 
  ```bash
 export CASE_INSENSITIVE=true
 cargo run Hello example.txt
-
-
+```
