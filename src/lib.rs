@@ -11,6 +11,10 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
         search_case_insensitive(&config.query, &contents)
     };
 
+    if results.len() == 0 {
+        println!("No matches found");
+    }
+
     for line in results {
         println!("{}", line);
     }
